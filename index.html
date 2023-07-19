@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Sign in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+     <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAA51BMVEX///8Ar/By2v903v8ARV07YngAt/oAsvR24P9z3P9gwNsAOlMHaYtx2PcAN1IIgq0nbYUDtPPp7O4mZn5UqMLZ4uUAJEw4fZVoyuYVWW+3w8kAK0nK0dUAQl1dtNAALUcfUWlFk6oGmc4HkMSlrLVsg5MJYIADqOMJhLSisbsKe6NifI6YprEpWXBMbYEAbpUAHkkAVnQxUWoAFT+AlaOK5P8LP1EiuvN86/8ANFUAPl4AKEsAIEBrtsx8zON7ipgAADEAC0EAAD+TmKUhjbIKNEQnr98bdZUimsZecINGhZZv1uwxXm0obm6YAAAKIElEQVR4nO2abXuiyBKGJbYCoiAYoxI602IivrvOiIjuxLMnMyez2fn/v+dUd6OiQhLiS/YDz8yVlIid26rq6i4gk0mVKlWqVKlSpUqVKlWqVJ8tw3yHqheGWvnLm7fkDy8M9YC7bzqKXBxqYbx5zuWhMEBVrUzGNDJGd2BlqvemeW9Y4CArY34m1HSVyfimgfr3/n11lfu6qo7+fpqaxn+MT4Ki4Rs8GMZXa9rPZKy/6KtMZtQ1wHM3nwVFPTXAuRy2+vcQSOBgUCQ3ND8ZaprJgKcAxvovBBN+5yDLMsYfnxo+yKmFVfUHJgE8Gsbcyuxaxl/dLuT/J3nKgml2X81Un1bdTPDq6enp3oAfT58G9YY+Acq03tLlofzFAmOCY0QQvLsgF4ay7kGrxeo+UoNFn/6yLgzFZN6Y0W8Y3waXJQnp3wNlbNVdmkakqjfT0KsLQJH3abix3lE8jpXhT4qJ1PbPn++GX8wnknYhKCGBxH8nlHIpKDGQsDYZ6P5BaoqaeoEauqRQHS5HWJuaIwqOFpiC6GxO8H6Q87d/K1zMiy2Efd9X0VgQWzMVLDB1UZupKjPzYg/xo5qu/6B7rfNqhAiDmsIuwBxSKOWemmQsQqC6dHOg9vKiRqjZxT908FRjdFYk6ytqMyhMd3UGg/pCU6bKodhmeEmhEDuKf4j6j2Ebfz1jWpkItezZOBEUBNXWEDkb1dSf2Hl7lsBTSsfTtZmTt4l/nsQyHtSJI4oUSm/hgVE1gASgVBNMi0NRs3rLoOhSbTU06in4lDNRV2dgqhK1J4iCyD2F1OVyeRvMPjB9RKGCoz02+/AC+ajDoeCDY2V48tJgYqSxqkihoCL1mGxBcHqBKW5MJ2QKHEoQdEismN3XRzXwic2YnCJiFT0v0sWWlXG+7lKTWyI3dTHv0TM11GYfzbfQ4qRbvwdl4nA/EVqn6F/VX13xPM/T4R9b+2BL1eIfnuCHkyFVc0pRYF9WQ6hGPSUGVCL7zxfesElxPIeZ4KkyQj2dvu+01dGJEgsqJk8nYYzRnaQClD3h0ujX54KUtgk3W6L+a7I2YZdQuEaoyDwt9NDwJBWr6yPufaeNK3WppLLZl+uPRiNWEtBoxEw6+5iJNM/TGoHJoKRCBQU5CYnVPZ5ptQjSqUXwiyTLHCpUPFU6p4LiSU1joeVhbaEOsVQOJWdLtc3sneBj66gxUtucCdLpWpKvDqEOKrragwUPhaGyV1fSNaZVjTnc7x/VSlgE94KRUKUATPtQ4iFUdQlbA20fSs5CCJnPRaGHj9lidcHndP7n7YlSK8HQB1CCzqEMDkX/Fqx9HtQBxreFAl+Vypi08nwS4w8n1lSZ0OwU9Q4N3dVVCAqNpiCW6LgP1gNbZpi5wmzte6BHcQgKsJpQG5jj7Yn/wToapBOtBOQuYAqg7NnPL1++/Pw5psuOwsweRPInN4GkE5zQCUNdSXeE1wa6QPc/gATVacynSwOXS+thORQ4j4vVSm4x/K25OSEMdQWzECHmfbGIc4krloVnGi/iRG3SDN+BStZibaGAqqmiDhtAU1BCqqkK+znq5jHahg7GXEMdtFiiEGPuQl3JUqGBxjSE+VbSxPpjEoQeDwtbplI9G0DZLSZ6UuvQhA1NYHIoKLn1DZhUryjB6MhPwlT1e9TFGkG1UOikGqmvZx9WVVXhmzxqYjb7ApNt8rgZzL5spVLajCPPm5jtG/I9NUm9slSYNjCy0sxuma7kWmMDNTVNs8tKgjLgJi0J7KjPWix6dLCGKlXKpdBA0h3tCJM2zwPFzjsN1AiFDjyW3UK9s3FQw1Dy1ulSvaw0oJ9QktTQAXZgO1ephypBrS4nhrLCUODo+oaK1oaJbeMkmf4wKSoENbd+ku/+hOU4MZQSgsoW/gwNKN1hpDxPkmwY+gSPTH89hgyRK3yJg/L3oW5YTh2EL1u4vQ4Vlzt/msMkwfbYyC2mmepNACWXIB/2oJD/7du3Gz77bsFc8hbLZybz1JKZB1BykPDZu1sT9mqjBJsY08xsobLllz0owRnz65lQh9amDR1ncbw2bWaOi7awCyVfV+oB1BL+Rjdp07WGkksTmDq7UEEzRbspcWsKUeYeVA0V5C1UYjEomS4sjUOo0Nq2WXLoqiLSJVg8WPs2UNkm1F+WpB+HkuvX2asIqK17xI52qLD/IqCku8IxUNkmLFwRUE6bqwPr174I3ZzYwQm2GAFVwrXsUVAYRjyAgtk3zMG/xjNA9fdv800BqsdPOJh9AVRZOgcUHtA7MMNn3UEHpWYAUMGlIOWyUKx45npeFBS2o5aZS0FVnj2HkK97IsTOfyqU4JBhf085Gr6YZeasUOih2+0OYD8VFz4yHQwGU3xRqCGd/I1ZPNQMKaDZBaEE4X+27di2LUSVhBVACTaTE1nRzwPl6boXrCUOwX/saRFc9dHjlpmzQNHrhrrOOyiHjLp76lNP0Xf1TYt1fqhnT/AcHh4avsicCsJnXwqKFHWv1Vi3WNFQ+U7QYnUulOikmNd/QUkYvFoS0BQCeamSkC2RZ0//tdmjx9Ypfm9G02Oh1NNBSRQq1Di8ufbpcVD4ZFCPcgntdDMfXpC/Hxm+9R49W6s8Snst1hbKXDeWofAxKBQFJZ0qfNJLue6uL3As6FNSYai/c0bYU3DCAsds8lDNdb9/LHzLPSgX2vbHLN8Os9sJbdIRY6D4zYc24dthaQ+KwHb4++0JoGBEF8K332LFQL3aOJTIiyQdm1Ob8DUrBy1WDNSrLRY0Dq50qjoFiX7QYn3IUyzRTzT7Itr22JwKnlPab9tPWtH3r7og9rgWKsZ5qheccLZlxi2/uFJ0ixVfEghtsczdtU+9dt3m8CRQbomUSy6/OnF4fSq2Th1UdLlOYIgmncBHQ0ENh/C5j/6xUNlHhQ5RgVJ3LBSCL1amUEoyqIgW6xHCB1UFvuWxUOQxK0VAbS5Zx3qKXbLeyalHdO3S8Lkn8JQrlWGpgq+5A6Xe3t768bNPm9ET1Fl45/lIuKeODx9+dN3Ki7ub6KHbIDFQzuaOSBjqu+tenyTRCy4tCftQm/tBccvM7g0jXhI4VP1YT8mseFZqcnYP6gNrH13ToU7x4nnERbP5vInrc4mU5/P67d18Xmv8M3fVnYdP9Q1Uf/2QWxc7Ow+fKjBEpSzBENcwIPlnPscwYCEh1HTEn38YlssNUimXCfyokMb6VaMdFuGPRcDpJDCGZLJ7BnxowobYDliGVzl29jsfBzDY1QvU+P374HpmcE0zoYa/hxFjBOPcvO/umjGkWaPTCwb6RuzitC7oh4q4Rbt3Bn1ASGAnQrPP7zKvP5fvLRNB0dEO/lr0feI35EWgBwcSQTE/HTB9RDp7kirieGIoz8t7erInvGPEYvfK+++HmpDfDZI8oSNEYCTUeO2MdyZ6ZjWiszV3Cr09UpKba6lSpUqVKlWqVKlSpUqVKqn+D8diL8fBIzWTAAAAAElFTkSuQmCC">
+</head>
+<body id="kkk">
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <img id="logo" src="data:image/png;base64,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" alt="">
+          <a class="navbar-brand" href="#">Hotel Booking</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rooms</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Types
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1Bhk</a></li>
+                  <li><a class="dropdown-item" href="#">2Bhk</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">3Bhk</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row mt-3 ps-2">
+        <div class="col-6">
+            <img id="htt" src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/club-itc/other-images/login.png" alt="">
+
+        </div>
+        <div class="col-6">
+            <form id="for" class="border form-control border-8 border-dark p-5">
+                <div class="mb-3">
+                    <h1 class="text-center">Sign in</h1>
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+      </div> <br><br><br><br><br>
+      <footer class="bg-secondary mt-5 text-center text-lg-start">
+        <!-- Grid container -->
+      
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3 mb-2" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">Licensed by Pranav</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+</body>
+</html>
